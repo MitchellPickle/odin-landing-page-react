@@ -1,5 +1,3 @@
-
-
 * {
     font-family: 'Roboto';
 }
@@ -24,6 +22,7 @@
     align-items: center;
     gap: 30px;
     padding-bottom: 45px;
+    padding-left: 25px;
 }
 
 .intro-left {
@@ -46,6 +45,8 @@
     color: white;
     width: 100px;
     height: 50px;
+    border: white solid 2px;
+    border-radius: 8px;
 }
 
 .hideaway-link {
@@ -55,12 +56,14 @@
 
 #intro-pizza {
     width: auto;
+    padding-right: 25px;
 }
 
 .info {
     display: flex;
     justify-content: center;
     gap: 64px;
+    padding-bottom: 100px;
 }
 
 .info-item {
@@ -84,13 +87,80 @@
     text-align: center;
 }
 
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.quote-info {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    text-align: center;
+    word-wrap: normal;
+    padding-top: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.quote-name {
+    display: flex;
+    justify-content: right;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 500px;
+}
+
+.ad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.ad-block {
+    background-color: #3882f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 800px;
+    border-radius: 8px;
+}
+
+.ad-block-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-info {
+    color: white;
+}
+
 .link, ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
 
-.header, ul, a, h1, p {
+.header, ul, a, h1, h3, p {
     color: white;
 }
 
@@ -101,5 +171,3 @@ ul, a:hover {
 li {
     margin: 8px;
 }
-
-
