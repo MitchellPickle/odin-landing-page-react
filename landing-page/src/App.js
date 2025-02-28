@@ -9,6 +9,12 @@ import VeggiePizza from './photos/VeggiePizza.jpg';
 import HawaiianPizza from './photos/HawaiianPizza.jpg';
 
 function App() {
+  const [count, setCount] = useState(0)
+
+  function eatPizza(){
+    setCount(count + 1);
+  }
+
   return (
     <html lang="en">
       <head>
@@ -18,13 +24,15 @@ function App() {
           <link rel='stylesheet' href="styles.css"/>
       </head>
       <body>
+        {/*Container that holds all flexboxes/divs*/}
           <div className="container">
             <header>
+                {/*Header is a flexbox that holds the logo and links*/}
                 <div className="header">
                     <div id="header-image">
                         <img src={PizzaLogo} alt="Pizza"/>
                     </div>
-
+                    {/*Link is a flexbox that holds the Google, YouTube, and Wikipedia links*/}
                     <div className="link">
                         <ul>
                           <li><a href="https://www.google.com" target="_blank">Google</a></li>
@@ -34,7 +42,10 @@ function App() {
                     </div>
                 </div>
             </header>
+
+            {/*Intro is a flexbox that holds the header, small paragraph, button with link, and pizza image*/}
             <div className="intro">
+                {/*Another flexbox that holds specifically the header and paragraph*/}
                 <div className="intro-left">
                   <h1 className="intro-left-header">Welcome to Mitchell's Pizza Landing Page!</h1>
                   <p className="intro-left-paragraph">
@@ -52,6 +63,7 @@ function App() {
 
             <h1 className="info-header">Pizzas</h1>
 
+            {/*Info is another flexbox that holds the various different pizzas*/}
             <div class="info">
             <div class="info-item">
                 <img class="info-image" src={CheesePizza} alt="Cheese Pizza"></img>
@@ -71,6 +83,7 @@ function App() {
             </div>
         </div>
 
+        {/*Quote is another flexbox that holds the quote itself and its author*/}
         <div class="quote">
             <blockquote class="quote-info">Those that wait patiently for pizza receive the best of all.
                 Which is homemade pizza.
@@ -81,6 +94,7 @@ function App() {
             </div>
         </div>
 
+        {/*Ad is a flexbox that contains the ad-block flexbox, which then carries the ad-block-left flexbox*/}
         <div class="ad">
             <div class="ad-block">
                 <div class="ad-block-left">
@@ -93,6 +107,7 @@ function App() {
             </div>
         </div>
 
+        {/*Footer is the last flexbox that contains the "copyright" of The Odin Project*/}
         <div class="footer">
             <div class="footer-info">Copyright @ The Odin Project 2025</div>
         </div>
