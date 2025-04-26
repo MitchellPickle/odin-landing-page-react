@@ -6,6 +6,11 @@
     width: 25%;
 }
 
+.image-header {
+    width: 100px;
+    height: 100px;
+}
+
 .header{
     display: flex;
     justify-content: space-evenly;
@@ -76,7 +81,7 @@
 }
 
 .info-image {
-    border: #3882f6 8px solid;
+    border: #1f2937 4px solid;
     border-radius: 8px;
 }
 

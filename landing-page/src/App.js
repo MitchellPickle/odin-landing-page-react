@@ -30,7 +30,7 @@ function App() {
                 {/*Header is a flexbox that holds the logo and links*/}
                 <div className="header">
                     <div id="header-image">
-                        <img src={PizzaLogo} alt="Pizza"/>
+                        <img className='image-header' src={PizzaLogo} alt="Pizza"/>
                     </div>
                     {/*Link is a flexbox that holds the Google, YouTube, and Wikipedia links*/}
                     <div className="link">
